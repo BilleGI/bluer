@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+
+add_executable(my_blure main.cpp ${MY_INCLUDE_DIR}/my_window.h my_window.cpp)
+
+target_include_directories(my_blure PRIVATE ${MY_INCLUDE_DIR})
